@@ -1,0 +1,29 @@
+body {
+  display: grid;
+  grid-template-areas: 
+  'box1 box1'
+  'box2 box3'
+  'box4 box4';
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 80px 695px 80px;
+}
+
+.box1 {
+  grid-area: box1;
+  background-color: #75a4c5;
+}
+
+.box2 {
+  grid-area: box2;
+  background-color: #4C7491
+}
+
+.box3 {
+  grid-area: box3;
+  background-color:#CADBE7;
+}
+
+.box4 {
+grid-area:box4;
+background-color:#75a4c5;
+}

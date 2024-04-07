@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: lightslategray;
+}
+
+h1 {
+  font-size: 40px;
+  color: antiquewhite;
+  text-align: center;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: antiquewhite;
+  width: 280px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align:justify;
+}
+
+.card-image {
+  height: 180px;
+  margin-bottom: 10px;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.fruit-1 {
+  background: url('./dragonfruits.jpeg');
+}
+
+.fruit-2 {
+  background: url('./lychees.jpeg');
+}
+
+.fruit-3 {
+  background: url('./mangosteen.jpeg');
+}
+
+.card h2 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color:slategray;
+  color: mistyrose;
+  padding: 10px 15px;
+  display: block;
+  text-align: center;
+  margin: 15px 40px;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: rosybrown;
+  color: mistyrose;
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: all 0.8s ease;
+}
