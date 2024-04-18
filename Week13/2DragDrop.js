@@ -14,11 +14,11 @@ for(list of lists){
       selected = null;
     });
 
-    leftBoxBox.addEventListener("dragover", function(e){
+    leftBox.addEventListener("dragover", function(e){
       e.preventDefault();
     });
-    leftBoxBox.addEventListener("drop", function(e){
-      leftBoxBox.appendChild(selected);
+    leftBox.addEventListener("drop", function(e){
+      leftBox.appendChild(selected);
       selected = null;
     });
   })
