@@ -1,0 +1,11 @@
+* {
+  margin: 30px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#navbar {
+  background-color: steelblue;
+  align-items: center;
+  text-align: center;
+}

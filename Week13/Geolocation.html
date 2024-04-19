@@ -6,7 +6,28 @@
   <title>Week13 Lab: Geolocation</title>
   <link rel="stylesheet" href="1Geoloc.css">
 </head>
+
 <body>
   
+  <div id="navbar"><span>Week13 Lab Assignment: Geolocation</span></div>
+  <button onclick="Geolocation()">Get User Location</button>
+  <p id="location"></p>
+
+  <script>
+    const x = document.getElementById("location");
+
+    function getLocation(){
+      if (navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser. <br>Please try in another compatible browser."
+      }
+    }
+
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude :" + position.coords.longitude;
+    }
+  </script>
+
 </body>
 </html>
